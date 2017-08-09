@@ -52,7 +52,7 @@ html, body {
     border: none;
     text-align: center;
     background-color: rgba(0, 0, 10, 0.2);
-    color: white;
+    color: rgb(130, 161, 191);
 }
 
 #search {
