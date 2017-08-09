@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Made by Jyel - Finished on Aug. 9th 2017 -->
+
+<html>
+<head>
+    <title>Subreddit Google Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+
+        function submit() {
+            var search = document.getElementById("search").value;
+            var sub = document.getElementById("sub").value;
+            search = search.replace(" ","+");
+            window.location.href = "https://www.google.com/search?q=" + search + "+url%3Areddit.com%2Fr%2F" + sub;
+        }
+
+        function subchange(sub) {
+            document.getElementById("sub").value = sub;
+            if (document.getElementById("search").value != "") {
+                submit();
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="main">
+    <div id="box">
+    <div id="searchbox">
+        <input id="search" onKeyDown="if(event.keyCode==13) submit();" type="text" placeholder="Research">
+            <button id="separator">/r/</button>
+        <input id="sub" onKeyDown="if(event.keyCode==13) submit();" type="text" placeholder="Subreddit">
+        <button id="submit" onclick="submit()">Go</button>
+    </div>
+    <div id="shortcuts">
+        <div id="shortone">
+            <button onclick="subchange('pics')">/r/pics</button>
+        </div>
+        <div id="shorttwo">
+            <button onclick="subchange('funny')">/r/funny</button>
+            <button onclick="subchange('worldnews')">/r/worldnews</button>
+            <button onclick="subchange('megalinks')">/r/megalinks</button>
+            <button onclick="subchange('piracy')">/r/piracy</button>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

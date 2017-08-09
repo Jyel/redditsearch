@@ -1,0 +1,140 @@
+/* Made by Jyel - Finished on Aug. 9th 2017 */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgba(44, 62, 80,1.0);
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgb(23, 37, 51);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: rgb(23, 37, 51);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: rgb(23, 37, 51);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(23, 37, 51);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(23, 37, 51);
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#box {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#searchbox {
+    width: 50%;
+    margin: auto;
+    display: table;
+    padding-bottom: 10px;
+}
+
+#searchbox input {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    float: left;
+    height: 50px;
+    font-size: 2vw;
+    border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 10, 0.2);
+    color: white;
+}
+
+#search {
+    width: 42%;
+}
+
+#separator {
+    float: left;
+    background-color: rgb(24, 34, 45);
+    color: rgb(68, 92, 119);
+    text-align: center;
+    margin-left: 3%;
+    width: 7%;
+    height: 52px;
+    font-size: 2vw;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#sub {
+    float: left;
+    width: 35%;
+}
+
+#submit {
+    width: 10%;
+    height: 50px;
+    transform: translateY(1px);
+    float: right;
+    border: 0;
+    background-color: rgb(63, 155, 102);
+    color: #77ce9c;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    line-height: 50%;
+}
+
+#submit:hover {
+    background-color: rgb(44, 114, 74);
+    color: #48bd7a;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#shortcuts {
+    width: 50%;
+    margin: auto;
+}
+
+#shortone, #shorttwo {
+    display: inline;
+}
+
+#shorttwo button {
+    margin-left: 1.25%;
+}
+
+#shortcuts button {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    float: left;
+    border: none;
+    width: 19%;
+    height: 25px;
+    background-color: rgb(52, 73, 94);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+    color: rgb(102, 129, 155);
+    font-size: 0.8vw;
+    line-height: 50%;
+}
+
+#shortcuts button:hover {
+    background-color: rgb(65, 88, 112);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
